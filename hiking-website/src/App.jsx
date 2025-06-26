@@ -5,9 +5,12 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import Hero from "../public/images/Hero.webp";
 import HeroSection from "./sections/HeroSection";
-import Second from "./sections/Second";
-import Third from "./sections/Third";
-
+import Second from "./sections/IntroSec";
+import Third from "./sections/FeatureSec";
+import PopulerPlace from "./sections/PopulerPlace";
+import Moreplace from "./sections/Moreplace";
+import Newsletter from "./Components/Newsletter";
+import Footer from "./Components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,8 +35,17 @@ function App() {
       </div>
 
       <div>
-        <Third />
+        <Third
+          section="Get accurate GPS locations and directions to every trailhead,
+              making your journey easy and stress-free."
+          heading="Location Details"
+        />
       </div>
+
+      <PopulerPlace heading="Populer Destinations" />
+      <Moreplace />
+      <Newsletter />
+      <Footer />
     </>
   );
 }

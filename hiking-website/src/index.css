@@ -81,7 +81,7 @@ button:focus-visible {
 }
 
 .lightGreenBg{
-  background-color: rgb(236, 252, 252);
+  background-color: rgb(244, 253, 255);
   
 }
 
@@ -93,4 +93,8 @@ button:focus-visible {
 .bg{
   
 
+}
+
+.btnblue{
+  background-color: rgb(0, 35, 42);
 }

@@ -10,7 +10,8 @@ import img5 from "../assets/img/img5.webp";
 import img6 from "../assets/img/img6.webp";
 import img7 from "../assets/img/img7.jpg";
 
-function Third() {
+
+function Third(props) {
   return (
     <div className="flex  lightGreenBg justify-between mt-20 pt-5 pb-5">
       <div className="w-[40vw] flex flex-col  gap-7  pl-20 justify-center">
@@ -60,11 +61,10 @@ function Third() {
           </div>
 
           <div>
-            <h2 className="font-normal text-[1.7rem]">Location Details</h2>
+            <h2 className="font-normal text-[1.7rem]">{props.heading}</h2>
 
             <p className="text-[0.9em]">
-              Get accurate GPS locations and directions to every trailhead,
-              making your journey easy and stress-free.
+              {props.section}
             </p>
           </div>
         </div>

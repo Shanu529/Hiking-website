@@ -6,14 +6,14 @@ import img2 from "../assets/img/img2.avif";
 function Second() {
   return (
     <>
-      <div className="flex gap-5 lightGreenBg">
-        <div className=" lightGreenBg w-[50vw] p-20 relative ">
+      <div className="flex gap-5 ">
+        <div className="  w-[50vw] p-20 relative ">
           <div
             style={{ height: "20rem", width: "20rem" }}
             className=" rounded-[2rem] absolute left-[15rem] top-[10rem]  shadow-black-900 shadow-2xl"
           >
             <img
-              className=" bg-bottom bg-cover w-full h-full object-cover object-cover rounded-[2rem]"
+              className=" bg-bottom bg-cover w-full h-full  object-cover rounded-[2rem]"
               src={img1}
               alt=""
             />
@@ -24,7 +24,7 @@ function Second() {
             className="rounded-[2rem]  shadow-black-900 shadow-2xl mb-10"
           >
             <img
-              className=" bg-bottom bg-cover w-full h-full object-cover object-cover rounded-[2rem]"
+              className=" bg-bottom bg-cover w-full h-full object-cover rounded-[2rem]"
               src={img2}
               alt=""
             />
