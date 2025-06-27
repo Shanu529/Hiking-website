@@ -3,7 +3,7 @@ import React from "react";
 function Newsletter() {
   return (
     <>
-      <div className="flex justify-evenly mt-[5rem]">
+      <div className=" displaynone  flex justify-evenly mt-[5rem]">
         <div className="flex flex-col gap-4">
           <div>
             <h2 className="text-orange-500">subscribe</h2>

@@ -9,7 +9,7 @@ import chandrashimla from "../assets/img/chandrashila.jpg";
 function CardOfPlace(props) {
   return (
     <>
-      <div className="flex gap-5 mt-5 justify-center">
+      <div className="    flex gap-5 mt-5 justify-center">
         <div className="flex ">
           <div className="w-[15vw] h-[50vh] shadow-black-900 shadow-2xl rounded-[0.5rem]">
             <img

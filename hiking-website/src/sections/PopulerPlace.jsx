@@ -5,7 +5,7 @@ function PopulerPlace(props) {
   return (
     <>
       <div className="pt-5 mt-10">
-        <div className="text-center text-[2rem] font-medium flex flex-col  items-center ">
+        <div className="  text-center text-[2rem] font-medium flex flex-col  items-center ">
           {props.heading}
           <div className="w-[70vw] ">
             <h2 className="text-[1rem] text-gray-600 mt-2">

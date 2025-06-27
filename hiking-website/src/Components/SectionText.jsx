@@ -8,13 +8,13 @@ import markha from "../assets/img/markha.jpg";
 function SectionText(props) {
   return (
     <>
-      <div className="flex flex-col justify-center items-center gap-5  bg-lightGreen">
+      <div className="  flex flex-col justify-center items-center gap-5  bg-lightGreen">
         {/* paigng 20 */}
         <h2 className="font-medium text-[2rem]">{props.heading}</h2>
         <p className="w-1/2 text-center">{props.heading2}</p>
       </div>
 
-      <div className="p-10 flex flex-col gap-5 mr-[2rem] ml-[2rem]">
+      <div className=" cards-placecss  p-10 flex  flex-wrap flex-col gap-5 mr-[2rem] ml-[2rem]">
         <div className="flex felx-wrap gap-20 ">
             {/* pading 5rem */}
           <div className="flex gap-4">

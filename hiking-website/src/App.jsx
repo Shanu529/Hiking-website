@@ -11,13 +11,15 @@ import PopulerPlace from "./sections/PopulerPlace";
 import Moreplace from "./sections/Moreplace";
 import Newsletter from "./Components/Newsletter";
 import Footer from "./Components/Footer";
+import CopyRight from "./Components/CopyRight";
+import video from "../public/images/216058_small.mp4";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div
+      {/* <div
         className="h-[80vh]"
         style={{
           backgroundImage: `url(${Hero})`,
@@ -27,6 +29,20 @@ function App() {
       >
         <Navbar />
 
+        <HeroSection />
+      </div> */}
+
+      <video 
+        className="  videocss h-[90%] absolute top-0 left-0 w-screen  object-cover"
+        src={video} // ✅ adjust path to your video
+        autoPlay
+        loop
+        muted
+       
+      />
+
+      <div className="relative z-10 text-white">
+        <Navbar  />
         <HeroSection />
       </div>
 
@@ -46,6 +62,7 @@ function App() {
       <Moreplace />
       <Newsletter />
       <Footer />
+      <CopyRight />
     </>
   );
 }
