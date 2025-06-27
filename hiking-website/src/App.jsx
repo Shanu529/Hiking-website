@@ -32,17 +32,16 @@ function App() {
         <HeroSection />
       </div> */}
 
-      <video 
+      <video
         className="  videocss h-[90%] absolute top-0 left-0 w-screen  object-cover"
         src={video} // ✅ adjust path to your video
         autoPlay
         loop
         muted
-       
       />
 
       <div className="relative z-10 text-white">
-        <Navbar  />
+        <Navbar />
         <HeroSection />
       </div>
 
@@ -63,6 +62,12 @@ function App() {
       <Newsletter />
       <Footer />
       <CopyRight />
+
+      
+
+      <div className="bg-yellow-200 sm:bg-green-200 md:bg-blue-200 lg:bg-red-200 xl:bg-purple-200 p-10">
+        Resize me!
+      </div>
     </>
   );
 }

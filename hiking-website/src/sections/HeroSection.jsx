@@ -1,3 +1,42 @@
+// import React, { useRef } from "react";
+// import gsap from "gsap";
+// import { useGSAP } from "@gsap/react";
+
+// function HeroSection() {
+//   const mainHeading = useRef();
+
+//   useGSAP(()=>{
+//     gsap.from(mainHeading.current,{
+//       x:-200,
+//       duration:1.7,
+//       opacity:0,
+
+//     })
+//   })
+
+//   return (
+//     <div ref={mainHeading} className="  flex flex-col text-white gap-5 h-[50vh] pt-[2.5em] pl-[6em] font-poppins align-center justify-center ">
+
+//       <div className=" text-[4em] w-[50%] text-white text-6xl  text-wrap gap-2">
+//           <h1 className="capitalize textheadingmain">
+//           Discover Your Next Adventure with tripadvisor
+//           </h1>
+//       </div>
+
+//       <div>
+//         <p className=" w-[50%] textheadingmainP ">
+//           Plan unforgettable journeys with expert guides and genuine traveler
+//           reviews. Tailor each trip to your interests and explore the world with
+//           confidence.
+//         </p>
+
+//       </div>
+
+//     </div>
+//   );
+// }
+
+// export default HeroSection;
 import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -5,34 +44,34 @@ import { useGSAP } from "@gsap/react";
 function HeroSection() {
   const mainHeading = useRef();
 
-  useGSAP(()=>{
-    gsap.from(mainHeading.current,{
-      x:-200,
-      duration:1.7,
-      opacity:0,
-      
-    })
-  })
-  
+  useGSAP(() => {
+    gsap.from(mainHeading.current, {
+      x: -200,
+      duration: 1.7,
+      opacity: 0,
+    });
+  }, []);
 
   return (
-    <div ref={mainHeading} className="  flex flex-col text-white gap-5 h-[50vh] pt-[2.5em] pl-[6em] font-poppins align-center justify-center ">
-
-      <div className=" text-[4em] w-[50%] text-white text-6xl  text-wrap gap-2">
-          <h1 className="capitalize textheadingmain">
-          Discover Your Next Adventure with tripadvisor
-          </h1>
+    <div
+      ref={mainHeading}
+      className="flex flex-col text-white gap-5 min-h-[50vh] pt-10 px-6 sm:px-10 lg:pt-[2.5em] lg:pl-[6em] font-poppins justify-center"
+    >
+      {/* Heading */}
+      <div className="text-[1.5rem] sm:text-[2rem] md:text-[3rem] md:w-[50%] xl:text-[2.8rem] md:font-semibold">
+        <h1 className="capitalize ">
+          Discover Your Next Adventure with Tripadvisor
+        </h1>
       </div>
 
+      {/* Paragraph */}
       <div>
-        <p className=" w-[50%] textheadingmainP ">
+        <p className="text-[0.7rem] sm:text-base md:text-lg lg:text-xl max-w-full md:max-w-[80%] lg:max-w-[60%] textheadingmainP">
           Plan unforgettable journeys with expert guides and genuine traveler
           reviews. Tailor each trip to your interests and explore the world with
           confidence.
         </p>
-
       </div>
-
     </div>
   );
 }
