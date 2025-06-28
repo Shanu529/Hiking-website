@@ -45,11 +45,11 @@ function App() {
         <HeroSection />
       </div>
 
-      <div>
+      <div className="over">
         <Second />
       </div>
 
-      <div>
+      <div className="over">
         <Third
           section="Get accurate GPS locations and directions to every trailhead,
               making your journey easy and stress-free."
@@ -63,11 +63,6 @@ function App() {
       <Footer />
       <CopyRight />
 
-      
-
-      <div className="bg-yellow-200 sm:bg-green-200 md:bg-blue-200 lg:bg-red-200 xl:bg-purple-200 p-10">
-        Resize me!
-      </div>
     </>
   );
 }
