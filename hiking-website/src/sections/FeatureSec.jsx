@@ -154,7 +154,7 @@ function Third(props) {
         trigger: animetionText.current,
         start: "top 80%",
         end: "top 90%",
-        markers: true,
+      
       },
     });
   });
@@ -168,7 +168,7 @@ function Third(props) {
         trigger: animetionSec.current,
         start: "top 80%",
         end: "top 90%",
-        markers: true,
+      
       },
     });
   });
@@ -182,7 +182,7 @@ function Third(props) {
         trigger: nextimg.current,
         start: "top 80%",
         end: "top 90%",
-        markers: true,
+      
       },
     });
   });
@@ -192,10 +192,10 @@ function Third(props) {
   
 
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-center gap-10 bg-[#DFF5E1] p-5 lg:p-10">
+    <div className="flex flex-col mt-5  lg:flex-row justify-between items-center gap-10 bg-[#DFF5E1] p-5 lg:p-10">
       {/* Left Section */}
       <div
-        className="w-full lg:w-1/2 flex flex-col gap-6 px-2 md:px-10 "
+        className="w-full lg:w-1/2 flex flex-col gap-6 px-2  "
         ref={animetionText}
       >
         <h2 className="text-2xl md:text-3xl font-semibold text-[#012525]">

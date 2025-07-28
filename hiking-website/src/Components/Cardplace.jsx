@@ -1,80 +1,37 @@
-// import React from "react";
-// import hampta from "../assets/img/hampta.jpg";
-// import sar from "../assets/img/sar-pass.webp";
-// import triund from "../assets/img/triund.avif";
-// import kedarnath from "../assets/img/kedarkanth.jpg";
-// import markha from "../assets/img/markha.jpg";
-// import chandrashimla from "../assets/img/chandrashila.jpg";
-
-// function CardOfPlace(props) {
-//   return (
-//     <>
-//       <div className="    flex gap-5 mt-5 justify-center">
-//         <div className="flex ">
-//           <div className="w-[15vw] h-[50vh] shadow-black-900 shadow-2xl rounded-[0.5rem]">
-//             <img
-//               className="w-full h-full rounded-[0.5rem] object-cover"
-//               src={hampta}
-//               alt=""
-//             />
-//           </div>
-//         </div>
-//         <div className="flex ">
-//           <div className="w-[15vw] h-[50vh]  shadow-black-900 shadow-2xl rounded-[0.5rem]">
-//             <img
-//               className="w-full h-full object-cover rounded-[0.5rem] "
-//               src={chandrashimla}
-//               alt=""
-//             />
-//           </div>
-//         </div>
-//         <div className="flex ">
-//           <div className="w-[15vw] h-[50vh]  shadow-black-900 shadow-2xl rounded-[0.5rem]">
-//             <img
-//               className="w-full h-full  object-cover rounded-[0.5rem]"
-//               src={sar}
-//               alt=""
-//             />
-//           </div>
-//         </div>
-//         <div className="flex ">
-//           <div className="w-[15vw] h-[50vh]  shadow-black-900 shadow-2xl rounded-[0.5rem]">
-//             <img
-//               className="w-full h-full  object-cover rounded-[0.5rem]"
-//               src={triund}
-//               alt=""
-//             />
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default CardOfPlace;
-
-
 import React from "react";
 import hampta from "../assets/img/hampta.jpg";
 import sar from "../assets/img/sar-pass.webp";
 import triund from "../assets/img/triund.avif";
 import chandrashila from "../assets/img/chandrashila.jpg";
 
-const imageList = [hampta, chandrashila, sar, triund];
+// const imageList = [hampta, chandrashila, sar, triund];
+const imageList = [
+  {
+    para: "The Hampta Pass Trek is a captivating journey through the Himalayas, offering breathtaking views, lush valleys...",
+    src: hampta,
+  },
+  { para: "The Sar Pass Trek is a thrilling adventure in the Indian Himalayas,known for its stunning landscapes,challenging trails...", src: chandrashila },
+  { para: "A snowy trail in Uttarakhand, Kedarkantha offers a classic winter trekking experience. With stunning views... ", src: sar },
+  { para: "A high-altitude trek in Ladakh, offering arid landscapes, Buddhist culture, and epic views. Great for those...", src: triund },
+];
 
 function CardOfPlace() {
   return (
-    <div className="flex flex-wrap justify-center gap-6 mt-6 px-4">
-      {imageList.map((img, index) => (
+    <div className="flex flex-wrap justify-center gap-6 mt-6 px-4 ">
+      {imageList.map((place, index) => (
         <div
           key={index}
-          className="w-full sm:w-[45%] md:w-[22%] h-[45vh] rounded-lg shadow-2xl overflow-hidden"
+          className=" relative w-full sm:w-[45%] md:w-[22%] h-[45vh] rounded-lg shadow-2xl overflow-hidden"
         >
           <img
-            src={img}
-            alt={`Place ${index + 1}`}
-            className="w-full h-full object-cover rounded-lg"
+            src={place.src}
+            alt={"place"}
+            className=" w-full h-full object-cover rounded-lg "
           />
+
+          <div className="absolute top-0 h-full w-full text-white capitalize  opacity-0  hover:opacity-100 transition duration-500">
+            <p className="py-5 px-5  absolute bottom-0  "> {place.para}</p>
+          </div>
         </div>
       ))}
     </div>

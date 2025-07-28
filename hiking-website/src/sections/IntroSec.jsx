@@ -151,7 +151,7 @@ function Second() {
         start: "top 90%",
         end: "top 50%",
         scrub: true,
-        markers: false, // remove markers in prod
+      
       },
     });
   });
