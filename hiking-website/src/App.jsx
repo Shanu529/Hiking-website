@@ -13,28 +13,17 @@ import Newsletter from "./Components/Newsletter";
 import Footer from "./Components/Footer";
 import CopyRight from "./Components/CopyRight";
 import video from "../public/images/216058_small.mp4";
+import Signin from "./Components/Signin";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      {/* <div
-        className="h-[80vh]"
-        style={{
-          backgroundImage: `url(${Hero})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <Navbar />
-
-        <HeroSection />
-      </div> */}
-
+     
       <video
         className="  videocss h-[90%] absolute top-0 left-0 w-screen  object-cover"
-        src={video} // ✅ adjust path to your video
+        src={video} 
         autoPlay
         loop
         muted
@@ -62,6 +51,10 @@ function App() {
       <Newsletter />
       <Footer />
       <CopyRight />
+{/* 
+      <div className="h-screen w-screen mt-[20%] top-0 left-1/3 justify-center align-middle fixed">
+        <Signin />
+      </div> */}
 
     </>
   );
